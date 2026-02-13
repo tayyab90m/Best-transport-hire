@@ -1,0 +1,152 @@
+{
+  "categories": [
+    "Forklifts",
+    "Excavators",
+    "Dozers",
+    "Graders",
+    "Wheel Loaders"
+  ],
+  "machinery": [
+    {
+      "id": "forklift",
+      "name": "Forklift",
+      "slug": "forklift",
+      "category": "Forklifts",
+      "thumbImage": "/logo/forklift1.jpg",
+      "coverImage": "/cover-images/forklift.jpg",
+      "gallery": [
+        {
+          "image": "/details/forklift1.jpg",
+          "label": "3 Ton"
+        },
+        {
+          "image": "/details/forklift2.png",
+          "label": "5 Ton"
+        },
+        {
+          "image": "/details/forklift3.png",
+          "label": "10 Ton"
+        },
+        {
+          "image": "/details/forklift4.png",
+          "label": "15 Ton"
+        }
+      ],
+      "shortDescription": "Industrial forklifts available in 3 to 15 ton capacity for material handling",
+      "description": "Our range of industrial forklifts are perfect for warehouses, construction sites, and logistics operations. Available in multiple capacities from 3 Ton to 15 Ton, these machines offer excellent lifting power and maneuverability. Ideal for loading, unloading, and material handling across the UAE.",
+      "specifications": {
+        "Capacity Range": "3 - 15 Ton",
+        "Lift Height": "Up to 6 m",
+        "Engine Type": "Diesel / Electric",
+        "Transmission": "Automatic",
+        "Tire Type": "Pneumatic / Solid"
+      },
+      "available": true,
+      "featured": true
+    },
+    {
+      "id": "excavator",
+      "name": "Hydraulic Excavator",
+      "slug": "hydraulic-excavator",
+      "category": "Excavators",
+      "thumbImage": "/logo/excavators.png",
+      "coverImage": "/cover-images/excavators.png",
+      "gallery": [
+        {
+          "image": "/details/excavators.png",
+          "label": "Standard"
+        }
+      ],
+      "shortDescription": "Heavy-duty excavator for construction and earthmoving projects",
+      "description": "Our Hydraulic Excavator delivers superior performance and efficiency for all your excavation needs. With its powerful engine and advanced hydraulics, this machine is perfect for trenching, material handling, and heavy-duty excavation work. Ideal for construction sites, mining operations, and infrastructure projects across the UAE.",
+      "specifications": {
+        "Operating Weight": "22,000 kg",
+        "Engine Power": "168 HP",
+        "Bucket Capacity": "1.2 m³",
+        "Max Digging Depth": "6.8 m",
+        "Max Reach": "10.2 m",
+        "Fuel Tank": "450 L"
+      },
+      "available": true,
+      "featured": true
+    },
+    {
+      "id": "dozer",
+      "name": "Crawler Dozer",
+      "slug": "crawler-dozer",
+      "category": "Dozers",
+      "thumbImage": "/logo/Dozers.png",
+      "coverImage": "/cover-images/Dozers.png",
+      "gallery": [
+        {
+          "image": "/details/Dozers.png",
+          "label": "Standard"
+        }
+      ],
+      "shortDescription": "Powerful dozer for earthmoving, grading and land clearing",
+      "description": "The Crawler Dozer is engineered for maximum productivity in earthmoving, land clearing, and grading applications. Its robust design and advanced blade control system ensure precise operation and excellent pushing power. Perfect for road construction, site preparation, and land development projects in Dubai and across the Emirates.",
+      "specifications": {
+        "Operating Weight": "24,500 kg",
+        "Engine Power": "215 HP",
+        "Blade Capacity": "6.2 m³",
+        "Blade Width": "4.1 m",
+        "Ground Pressure": "0.65 kg/cm²",
+        "Fuel Tank": "480 L"
+      },
+      "available": false,
+      "featured": true
+    },
+    {
+      "id": "grader",
+      "name": "Motor Grader",
+      "slug": "motor-grader",
+      "category": "Graders",
+      "thumbImage": "/logo/grader-removebg-preview-1.png",
+      "coverImage": "/cover-images/grader-removebg-preview-1.png",
+      "gallery": [
+        {
+          "image": "/details/grader-removebg-preview-1.png",
+          "label": "Standard"
+        }
+      ],
+      "shortDescription": "Precision motor grader for road construction and maintenance",
+      "description": "Our Motor Grader is the ultimate machine for road construction, surface grading, and precision leveling work. With its articulated frame and precise blade control, this grader delivers exceptional accuracy for creating smooth, even surfaces. Ideal for road maintenance, airport runway work, and large-scale construction projects throughout the UAE.",
+      "specifications": {
+        "Operating Weight": "18,200 kg",
+        "Engine Power": "205 HP",
+        "Blade Width": "4.3 m",
+        "Blade Pull": "13,500 kg",
+        "Turning Radius": "7.8 m",
+        "Fuel Tank": "380 L"
+      },
+      "available": true,
+      "featured": true
+    },
+    {
+      "id": "wheel-loader",
+      "name": "Wheel Loader",
+      "slug": "wheel-loader",
+      "category": "Wheel Loaders",
+      "thumbImage": "/logo/pro_17.jpg",
+      "coverImage": "/cover-images/pro_17.jpg",
+      "gallery": [
+        {
+          "image": "/details/pro_17.jpg",
+          "label": "Standard"
+        }
+      ],
+      "shortDescription": "Versatile wheel loader for loading and material handling",
+      "description": "The Wheel Loader is a powerful and versatile machine designed for loading, stockpiling, and material handling operations. With its high-lift capability and quick-coupler system, it adapts to various attachments for maximum versatility. Perfect for quarries, construction sites, warehouses, and logistics operations throughout Dubai and the UAE.",
+      "specifications": {
+        "Operating Weight": "21,000 kg",
+        "Engine Power": "252 HP",
+        "Bucket Capacity": "3.8 m³",
+        "Dump Height": "3.0 m",
+        "Breakout Force": "18,200 kg",
+        "Fuel Tank": "350 L"
+      },
+      "available": true,
+      "featured": true
+    }
+  ]
+}

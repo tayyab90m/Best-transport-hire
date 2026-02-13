@@ -1,0 +1,52 @@
+{
+  "reviews": [
+    {
+      "id": "rev-001",
+      "userName": "Mohammed Al Rashid",
+      "category": "excellent",
+      "description": "Outstanding service and quality equipment. The excavator was in perfect condition and delivered on time. Highly recommend Best Hire Transport for all your equipment rental needs in UAE.",
+      "createdAt": "2024-12-15T10:30:00Z",
+      "approved": true
+    },
+    {
+      "id": "rev-002",
+      "userName": "Sarah Ahmed",
+      "category": "very_good",
+      "description": "Very professional team. The generator rental process was smooth and the equipment performed flawlessly throughout our event. Will definitely use again.",
+      "createdAt": "2024-12-20T14:15:00Z",
+      "approved": false
+    },
+    {
+      "id": "rev-003",
+      "userName": "Khalid Hassan",
+      "category": "excellent",
+      "description": "Best equipment rental company in UAE! The crane operator was highly skilled and safety standards were top-notch. Great value for money.",
+      "createdAt": "2025-01-05T09:00:00Z",
+      "approved": true
+    },
+    {
+      "id": "rev-004",
+      "userName": "Ahmed Construction LLC",
+      "category": "good",
+      "description": "Good quality machinery and reasonable rates. The booking process was easy and customer service was helpful. Looking forward to future rentals.",
+      "createdAt": "2025-01-10T16:45:00Z",
+      "approved": true
+    },
+    {
+      "id": "rev-1769849860704",
+      "userName": "Tayyab",
+      "category": "excellent",
+      "description": "Its veru amazing service",
+      "createdAt": "2026-01-31T08:57:40.704Z",
+      "approved": false
+    },
+    {
+      "id": "rev-1769849911057",
+      "userName": "Tayyab",
+      "category": "excellent",
+      "description": "Nice working",
+      "createdAt": "2026-01-31T08:58:31.057Z",
+      "approved": false
+    }
+  ]
+}
