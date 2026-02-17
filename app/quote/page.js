@@ -1,12 +1,42 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import machineryData from '@/data/machinery.json';
 import { SITE_CONFIG, getWhatsAppLink } from '@/lib/constants';
 
-export default function QuotePage() {
+// Loading skeleton component
+function QuotePageSkeleton() {
+  return (
+    <div className="min-h-screen bg-background">
+      <section className="relative py-16 md:py-20 bg-gradient-to-br from-[var(--primary-dark)] via-[var(--primary)] to-[var(--primary-light)]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="h-12 w-64 bg-white/20 rounded mx-auto mb-4 animate-pulse"></div>
+          <div className="h-6 w-96 bg-white/20 rounded mx-auto animate-pulse"></div>
+        </div>
+      </section>
+      <section className="py-12 md:py-16">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-surface rounded-2xl p-8 md:p-10 border border-border">
+            <div className="space-y-6">
+              <div className="h-8 w-48 bg-gray-200 rounded animate-pulse"></div>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="h-12 bg-gray-200 rounded animate-pulse"></div>
+                <div className="h-12 bg-gray-200 rounded animate-pulse"></div>
+              </div>
+              <div className="h-12 bg-gray-200 rounded animate-pulse"></div>
+              <div className="h-32 bg-gray-200 rounded animate-pulse"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+// Form component that uses useSearchParams
+function QuoteForm() {
   const searchParams = useSearchParams();
   const preselectedMachine = searchParams.get('machine') || '';
 
@@ -254,3 +284,11 @@ export default function QuotePage() {
   );
 }
 
+// Main page component with Suspense wrapper
+export default function QuotePage() {
+  return (
+    <Suspense fallback={<QuotePageSkeleton />}>
+      <QuoteForm />
+    </Suspense>
+  );
+}
