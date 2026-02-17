@@ -1,5 +1,27 @@
 @import "tailwindcss";
 
+/* ===== Force white background on images (prevent PNG transparency showing) ===== */
+img,
+img[src],
+[data-nimg],
+.next-image-wrapper,
+picture,
+picture img {
+  background-color: #ffffff !important;
+}
+
+/* Image container backgrounds */
+.bg-white img,
+div[class*="bg-white"] img {
+  background-color: #ffffff !important;
+}
+
+/* Ensure Next.js image wrappers have white background */
+span:has(> img),
+div:has(> img) {
+  background-color: #ffffff;
+}
+
 /* ===== BVM Color Scheme Variables ===== */
 :root {
   /* Primary Colors */

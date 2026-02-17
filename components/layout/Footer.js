@@ -41,7 +41,8 @@ export default function Footer() {
                 alt={SITE_CONFIG.name}
                 width={60}
                 height={60}
-                className="w-14 h-14 object-contain bg-white rounded-lg p-1"
+                className="w-14 h-14 object-contain rounded-lg p-1"
+                style={{ backgroundColor: '#ffffff' }}
               />
               <div>
                 <span className="text-2xl font-bold">{SITE_CONFIG.name}</span>

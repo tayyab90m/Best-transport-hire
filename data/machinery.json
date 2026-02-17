@@ -1,152 +1,471 @@
 {
-  "categories": [
-    "Forklifts",
-    "Excavators",
-    "Dozers",
-    "Graders",
-    "Wheel Loaders"
-  ],
+  "categories": ["Crane", "Forklift", "Backhoe Loader", "Boom Lift", "High Up Truck", "Recovery"],
   "machinery": [
     {
-      "id": "forklift",
-      "name": "Forklift",
-      "slug": "forklift",
-      "category": "Forklifts",
-      "thumbImage": "/logo/forklift1.jpg",
-      "coverImage": "/cover-images/forklift.jpg",
+      "id": "crane-50-ton",
+      "name": "Crane 50 Ton",
+      "slug": "crane-50-ton",
+      "category": "Crane",
+      "variant": "50 Ton",
+      "thumbImage": "/crane/crane1.jpeg",
+      "coverImage": "/crane/crane1.jpeg",
       "gallery": [
-        {
-          "image": "/details/forklift1.jpg",
-          "label": "3 Ton"
-        },
-        {
-          "image": "/details/forklift2.png",
-          "label": "5 Ton"
-        },
-        {
-          "image": "/details/forklift3.png",
-          "label": "10 Ton"
-        },
-        {
-          "image": "/details/forklift4.png",
-          "label": "15 Ton"
-        }
+        { "image": "/crane/crane1.jpeg", "label": "50 Ton" },
+        { "image": "/crane/crane2.jpg", "label": "70 Ton" },
+        { "image": "/crane/crane3.jpeg", "label": "100 Ton" },
+        { "image": "/crane/crane4.jpeg", "label": "View 1" },
+        { "image": "/crane/crane5.jpeg", "label": "View 2" },
+        { "image": "/crane/crane6.jpeg", "label": "View 3" },
+        { "image": "/crane/crane7.jpeg", "label": "View 4" },
+        { "image": "/crane/crane8.jpeg", "label": "View 5" },
+        { "image": "/crane/crane9.jpeg", "label": "View 6" }
       ],
-      "shortDescription": "Industrial forklifts available in 3 to 15 ton capacity for material handling",
-      "description": "Our range of industrial forklifts are perfect for warehouses, construction sites, and logistics operations. Available in multiple capacities from 3 Ton to 15 Ton, these machines offer excellent lifting power and maneuverability. Ideal for loading, unloading, and material handling across the UAE.",
+      "shortDescription": "50 Ton mobile crane for medium-scale lifting operations",
+      "description": "Our 50 Ton Mobile Crane delivers exceptional lifting performance for medium-scale construction and industrial projects. Featuring advanced hydraulic systems and precise load control, this crane is ideal for steel erection, equipment installation, and general lifting operations across the UAE.",
       "specifications": {
-        "Capacity Range": "3 - 15 Ton",
-        "Lift Height": "Up to 6 m",
-        "Engine Type": "Diesel / Electric",
+        "Capacity": "50 Ton",
+        "Max Boom Length": "42 m",
+        "Max Lifting Height": "48 m",
+        "Engine Power": "280 HP",
+        "Counterweight": "12 Ton",
+        "Outrigger Span": "7.2 m"
+      },
+      "available": true,
+      "featured": true
+    },
+    {
+      "id": "crane-70-ton",
+      "name": "Crane 70 Ton",
+      "slug": "crane-70-ton",
+      "category": "Crane",
+      "variant": "70 Ton",
+      "thumbImage": "/crane/crane2.jpg",
+      "coverImage": "/crane/crane2.jpg",
+      "gallery": [
+        { "image": "/crane/crane1.jpeg", "label": "50 Ton" },
+        { "image": "/crane/crane2.jpg", "label": "70 Ton" },
+        { "image": "/crane/crane3.jpeg", "label": "100 Ton" },
+        { "image": "/crane/crane4.jpeg", "label": "View 1" },
+        { "image": "/crane/crane5.jpeg", "label": "View 2" },
+        { "image": "/crane/crane6.jpeg", "label": "View 3" },
+        { "image": "/crane/crane7.jpeg", "label": "View 4" },
+        { "image": "/crane/crane8.jpeg", "label": "View 5" },
+        { "image": "/crane/crane9.jpeg", "label": "View 6" }
+      ],
+      "shortDescription": "70 Ton mobile crane for heavy-duty lifting projects",
+      "description": "The 70 Ton Mobile Crane offers superior lifting capacity for demanding construction projects. With extended boom reach and enhanced stability systems, this crane handles heavy steel structures, precast elements, and industrial equipment with precision and safety.",
+      "specifications": {
+        "Capacity": "70 Ton",
+        "Max Boom Length": "50 m",
+        "Max Lifting Height": "56 m",
+        "Engine Power": "350 HP",
+        "Counterweight": "18 Ton",
+        "Outrigger Span": "8.0 m"
+      },
+      "available": true,
+      "featured": true
+    },
+    {
+      "id": "crane-100-ton",
+      "name": "Crane 100 Ton",
+      "slug": "crane-100-ton",
+      "category": "Crane",
+      "variant": "100 Ton",
+      "thumbImage": "/crane/crane3.jpeg",
+      "coverImage": "/crane/crane3.jpeg",
+      "gallery": [
+        { "image": "/crane/crane1.jpeg", "label": "50 Ton" },
+        { "image": "/crane/crane2.jpg", "label": "70 Ton" },
+        { "image": "/crane/crane3.jpeg", "label": "100 Ton" },
+        { "image": "/crane/crane4.jpeg", "label": "View 1" },
+        { "image": "/crane/crane5.jpeg", "label": "View 2" },
+        { "image": "/crane/crane6.jpeg", "label": "View 3" },
+        { "image": "/crane/crane7.jpeg", "label": "View 4" },
+        { "image": "/crane/crane8.jpeg", "label": "View 5" },
+        { "image": "/crane/crane9.jpeg", "label": "View 6" }
+      ],
+      "shortDescription": "100 Ton mobile crane for major construction and industrial projects",
+      "description": "Our flagship 100 Ton Mobile Crane provides maximum lifting power for the most demanding projects. Ideal for high-rise construction, bridge building, and heavy industrial installations. Features state-of-the-art safety systems and computerized load management.",
+      "specifications": {
+        "Capacity": "100 Ton",
+        "Max Boom Length": "60 m",
+        "Max Lifting Height": "68 m",
+        "Engine Power": "450 HP",
+        "Counterweight": "25 Ton",
+        "Outrigger Span": "9.0 m"
+      },
+      "available": true,
+      "featured": true
+    },
+    {
+      "id": "forklift-3-ton",
+      "name": "Forklift 3 Ton",
+      "slug": "forklift-3-ton",
+      "category": "Forklift",
+      "variant": "3 Ton",
+      "thumbImage": "/forklift/forklift1.jpg",
+      "coverImage": "/forklift/forklift1.jpg",
+      "gallery": [
+        { "image": "/forklift/forklift1.jpg", "label": "3 Ton" },
+        { "image": "/forklift/forklift2.png", "label": "5 Ton" },
+        { "image": "/forklift/forklift3.png", "label": "8 Ton" },
+        { "image": "/forklift/forklift4.jpg", "label": "10 Ton" },
+        { "image": "/forklift/forklift5.jpg", "label": "15 Ton" },
+        { "image": "/forklift/forklift6.png", "label": "View 1" },
+        { "image": "/forklift/forklift7.png", "label": "View 2" },
+        { "image": "/forklift/forklift8.png", "label": "View 3" },
+        { "image": "/forklift/forklift9.jpg", "label": "View 4" }
+      ],
+      "shortDescription": "Compact 3 Ton forklift for warehouses and light material handling",
+      "description": "The 3 Ton Forklift is perfect for warehouses, distribution centers, and light industrial applications. Its compact design allows easy maneuverability in tight spaces while providing reliable lifting performance for pallets and smaller loads.",
+      "specifications": {
+        "Capacity": "3 Ton",
+        "Lift Height": "4.5 m",
+        "Fork Length": "1.2 m",
+        "Engine Type": "Diesel / LPG",
         "Transmission": "Automatic",
-        "Tire Type": "Pneumatic / Solid"
+        "Turning Radius": "2.3 m"
       },
       "available": true,
       "featured": true
     },
     {
-      "id": "excavator",
-      "name": "Hydraulic Excavator",
-      "slug": "hydraulic-excavator",
-      "category": "Excavators",
-      "thumbImage": "/logo/excavators.png",
-      "coverImage": "/cover-images/excavators.png",
+      "id": "forklift-5-ton",
+      "name": "Forklift 5 Ton",
+      "slug": "forklift-5-ton",
+      "category": "Forklift",
+      "variant": "5 Ton",
+      "thumbImage": "/forklift/forklift2.png",
+      "coverImage": "/forklift/forklift2.png",
       "gallery": [
-        {
-          "image": "/details/excavators.png",
-          "label": "Standard"
-        }
+        { "image": "/forklift/forklift1.jpg", "label": "3 Ton" },
+        { "image": "/forklift/forklift2.png", "label": "5 Ton" },
+        { "image": "/forklift/forklift3.png", "label": "8 Ton" },
+        { "image": "/forklift/forklift4.jpg", "label": "10 Ton" },
+        { "image": "/forklift/forklift5.jpg", "label": "15 Ton" },
+        { "image": "/forklift/forklift6.png", "label": "View 1" },
+        { "image": "/forklift/forklift7.png", "label": "View 2" },
+        { "image": "/forklift/forklift8.png", "label": "View 3" },
+        { "image": "/forklift/forklift9.jpg", "label": "View 4" }
       ],
-      "shortDescription": "Heavy-duty excavator for construction and earthmoving projects",
-      "description": "Our Hydraulic Excavator delivers superior performance and efficiency for all your excavation needs. With its powerful engine and advanced hydraulics, this machine is perfect for trenching, material handling, and heavy-duty excavation work. Ideal for construction sites, mining operations, and infrastructure projects across the UAE.",
+      "shortDescription": "Versatile 5 Ton forklift for medium-duty material handling",
+      "description": "Our 5 Ton Forklift offers the perfect balance of power and maneuverability. Ideal for construction sites, manufacturing facilities, and logistics operations requiring regular handling of medium-weight materials.",
       "specifications": {
-        "Operating Weight": "22,000 kg",
-        "Engine Power": "168 HP",
-        "Bucket Capacity": "1.2 m³",
-        "Max Digging Depth": "6.8 m",
-        "Max Reach": "10.2 m",
-        "Fuel Tank": "450 L"
+        "Capacity": "5 Ton",
+        "Lift Height": "5.0 m",
+        "Fork Length": "1.4 m",
+        "Engine Type": "Diesel",
+        "Transmission": "Automatic",
+        "Turning Radius": "2.8 m"
+      },
+      "available": true,
+      "featured": false
+    },
+    {
+      "id": "forklift-8-ton",
+      "name": "Forklift 8 Ton",
+      "slug": "forklift-8-ton",
+      "category": "Forklift",
+      "variant": "8 Ton",
+      "thumbImage": "/forklift/forklift3.png",
+      "coverImage": "/forklift/forklift3.png",
+      "gallery": [
+        { "image": "/forklift/forklift1.jpg", "label": "3 Ton" },
+        { "image": "/forklift/forklift2.png", "label": "5 Ton" },
+        { "image": "/forklift/forklift3.png", "label": "8 Ton" },
+        { "image": "/forklift/forklift4.jpg", "label": "10 Ton" },
+        { "image": "/forklift/forklift5.jpg", "label": "15 Ton" },
+        { "image": "/forklift/forklift6.png", "label": "View 1" },
+        { "image": "/forklift/forklift7.png", "label": "View 2" },
+        { "image": "/forklift/forklift8.png", "label": "View 3" },
+        { "image": "/forklift/forklift9.jpg", "label": "View 4" }
+      ],
+      "shortDescription": "Heavy-duty 8 Ton forklift for demanding industrial applications",
+      "description": "The 8 Ton Forklift is engineered for heavy industrial environments. With enhanced stability and powerful lifting capacity, it's perfect for steel yards, ports, and heavy manufacturing operations.",
+      "specifications": {
+        "Capacity": "8 Ton",
+        "Lift Height": "5.5 m",
+        "Fork Length": "1.6 m",
+        "Engine Type": "Diesel",
+        "Transmission": "Automatic",
+        "Turning Radius": "3.2 m"
+      },
+      "available": true,
+      "featured": false
+    },
+    {
+      "id": "forklift-10-ton",
+      "name": "Forklift 10 Ton",
+      "slug": "forklift-10-ton",
+      "category": "Forklift",
+      "variant": "10 Ton",
+      "thumbImage": "/forklift/forklift4.jpg",
+      "coverImage": "/forklift/forklift4.jpg",
+      "gallery": [
+        { "image": "/forklift/forklift1.jpg", "label": "3 Ton" },
+        { "image": "/forklift/forklift2.png", "label": "5 Ton" },
+        { "image": "/forklift/forklift3.png", "label": "8 Ton" },
+        { "image": "/forklift/forklift4.jpg", "label": "10 Ton" },
+        { "image": "/forklift/forklift5.jpg", "label": "15 Ton" },
+        { "image": "/forklift/forklift6.png", "label": "View 1" },
+        { "image": "/forklift/forklift7.png", "label": "View 2" },
+        { "image": "/forklift/forklift8.png", "label": "View 3" },
+        { "image": "/forklift/forklift9.jpg", "label": "View 4" }
+      ],
+      "shortDescription": "Powerful 10 Ton forklift for heavy container and material handling",
+      "description": "Our 10 Ton Forklift delivers exceptional power for heavy container handling and industrial applications. Features reinforced mast and enhanced hydraulics for maximum lifting performance.",
+      "specifications": {
+        "Capacity": "10 Ton",
+        "Lift Height": "6.0 m",
+        "Fork Length": "1.8 m",
+        "Engine Type": "Diesel",
+        "Transmission": "Powershift",
+        "Turning Radius": "3.8 m"
+      },
+      "available": true,
+      "featured": false
+    },
+    {
+      "id": "forklift-15-ton",
+      "name": "Forklift 15 Ton",
+      "slug": "forklift-15-ton",
+      "category": "Forklift",
+      "variant": "15 Ton",
+      "thumbImage": "/forklift/forklift5.jpg",
+      "coverImage": "/forklift/forklift5.jpg",
+      "gallery": [
+        { "image": "/forklift/forklift1.jpg", "label": "3 Ton" },
+        { "image": "/forklift/forklift2.png", "label": "5 Ton" },
+        { "image": "/forklift/forklift3.png", "label": "8 Ton" },
+        { "image": "/forklift/forklift4.jpg", "label": "10 Ton" },
+        { "image": "/forklift/forklift5.jpg", "label": "15 Ton" },
+        { "image": "/forklift/forklift6.png", "label": "View 1" },
+        { "image": "/forklift/forklift7.png", "label": "View 2" },
+        { "image": "/forklift/forklift8.png", "label": "View 3" },
+        { "image": "/forklift/forklift9.jpg", "label": "View 4" }
+      ],
+      "shortDescription": "Maximum capacity 15 Ton forklift for the heaviest loads",
+      "description": "The 15 Ton Forklift is our most powerful material handling solution. Designed for ports, steel mills, and heavy industrial operations where maximum lifting capacity is essential.",
+      "specifications": {
+        "Capacity": "15 Ton",
+        "Lift Height": "6.0 m",
+        "Fork Length": "2.0 m",
+        "Engine Type": "Diesel",
+        "Transmission": "Powershift",
+        "Turning Radius": "4.5 m"
+      },
+      "available": true,
+      "featured": false
+    },
+    {
+      "id": "backhoe-loader",
+      "name": "Backhoe Loader",
+      "slug": "backhoe-loader",
+      "category": "Backhoe Loader",
+      "variant": "Standard",
+      "thumbImage": "/backhoeloader/backhoe1.png",
+      "coverImage": "/backhoeloader/backhoe1.png",
+      "gallery": [
+        { "image": "/backhoeloader/backhoe1.png", "label": "Front View" },
+        { "image": "/backhoeloader/backhoe2.png", "label": "Side View" },
+        { "image": "/backhoeloader/backhoe3.jpg", "label": "Working" },
+        { "image": "/backhoeloader/backhoe4.jpg", "label": "Detail 1" },
+        { "image": "/backhoeloader/backhoe5.jpg", "label": "Detail 2" }
+      ],
+      "shortDescription": "Versatile backhoe loader for excavation and material handling",
+      "description": "Our Backhoe Loader combines the capabilities of a loader and excavator in one versatile machine. Perfect for trenching, excavation, material handling, and general construction work. Ideal for urban construction sites with limited space.",
+      "specifications": {
+        "Operating Weight": "8,500 kg",
+        "Engine Power": "97 HP",
+        "Loader Bucket": "1.0 m³",
+        "Backhoe Bucket": "0.25 m³",
+        "Max Dig Depth": "4.3 m",
+        "Max Loading Height": "3.4 m"
       },
       "available": true,
       "featured": true
     },
     {
-      "id": "dozer",
-      "name": "Crawler Dozer",
-      "slug": "crawler-dozer",
-      "category": "Dozers",
-      "thumbImage": "/logo/Dozers.png",
-      "coverImage": "/cover-images/Dozers.png",
+      "id": "boom-lift-14-meter",
+      "name": "Boom Lift 14 Meter",
+      "slug": "boom-lift-14-meter",
+      "category": "Boom Lift",
+      "variant": "14 Meter",
+      "thumbImage": "/boomlift/boomlift1.png",
+      "coverImage": "/boomlift/boomlift1.png",
       "gallery": [
-        {
-          "image": "/details/Dozers.png",
-          "label": "Standard"
-        }
+        { "image": "/boomlift/boomlift1.png", "label": "14 Meter" },
+        { "image": "/boomlift/boomlift2.png", "label": "17 Meter" },
+        { "image": "/boomlift/boomlift3.jpg", "label": "Working" },
+        { "image": "/boomlift/boomlift4.jpg", "label": "Detail 1" },
+        { "image": "/boomlift/boomlift5.jpg", "label": "Detail 2" }
       ],
-      "shortDescription": "Powerful dozer for earthmoving, grading and land clearing",
-      "description": "The Crawler Dozer is engineered for maximum productivity in earthmoving, land clearing, and grading applications. Its robust design and advanced blade control system ensure precise operation and excellent pushing power. Perfect for road construction, site preparation, and land development projects in Dubai and across the Emirates.",
+      "shortDescription": "14 Meter articulating boom lift for elevated work access",
+      "description": "The 14 Meter Boom Lift provides safe and efficient elevated work access for maintenance, installation, and construction tasks. Features articulating boom for reaching over obstacles and into tight spaces.",
       "specifications": {
-        "Operating Weight": "24,500 kg",
-        "Engine Power": "215 HP",
-        "Blade Capacity": "6.2 m³",
-        "Blade Width": "4.1 m",
-        "Ground Pressure": "0.65 kg/cm²",
-        "Fuel Tank": "480 L"
-      },
-      "available": false,
-      "featured": true
-    },
-    {
-      "id": "grader",
-      "name": "Motor Grader",
-      "slug": "motor-grader",
-      "category": "Graders",
-      "thumbImage": "/logo/grader-removebg-preview-1.png",
-      "coverImage": "/cover-images/grader-removebg-preview-1.png",
-      "gallery": [
-        {
-          "image": "/details/grader-removebg-preview-1.png",
-          "label": "Standard"
-        }
-      ],
-      "shortDescription": "Precision motor grader for road construction and maintenance",
-      "description": "Our Motor Grader is the ultimate machine for road construction, surface grading, and precision leveling work. With its articulated frame and precise blade control, this grader delivers exceptional accuracy for creating smooth, even surfaces. Ideal for road maintenance, airport runway work, and large-scale construction projects throughout the UAE.",
-      "specifications": {
-        "Operating Weight": "18,200 kg",
-        "Engine Power": "205 HP",
-        "Blade Width": "4.3 m",
-        "Blade Pull": "13,500 kg",
-        "Turning Radius": "7.8 m",
-        "Fuel Tank": "380 L"
+        "Working Height": "14 m",
+        "Platform Capacity": "230 kg",
+        "Horizontal Reach": "7.5 m",
+        "Platform Size": "1.5 x 0.75 m",
+        "Power Source": "Diesel / Electric",
+        "Drive": "4WD"
       },
       "available": true,
       "featured": true
     },
     {
-      "id": "wheel-loader",
-      "name": "Wheel Loader",
-      "slug": "wheel-loader",
-      "category": "Wheel Loaders",
-      "thumbImage": "/logo/pro_17.jpg",
-      "coverImage": "/cover-images/pro_17.jpg",
+      "id": "boom-lift-17-meter",
+      "name": "Boom Lift 17 Meter",
+      "slug": "boom-lift-17-meter",
+      "category": "Boom Lift",
+      "variant": "17 Meter",
+      "thumbImage": "/boomlift/boomlift2.png",
+      "coverImage": "/boomlift/boomlift2.png",
       "gallery": [
-        {
-          "image": "/details/pro_17.jpg",
-          "label": "Standard"
-        }
+        { "image": "/boomlift/boomlift1.png", "label": "14 Meter" },
+        { "image": "/boomlift/boomlift2.png", "label": "17 Meter" },
+        { "image": "/boomlift/boomlift3.jpg", "label": "Working" },
+        { "image": "/boomlift/boomlift4.jpg", "label": "Detail 1" },
+        { "image": "/boomlift/boomlift5.jpg", "label": "Detail 2" }
       ],
-      "shortDescription": "Versatile wheel loader for loading and material handling",
-      "description": "The Wheel Loader is a powerful and versatile machine designed for loading, stockpiling, and material handling operations. With its high-lift capability and quick-coupler system, it adapts to various attachments for maximum versatility. Perfect for quarries, construction sites, warehouses, and logistics operations throughout Dubai and the UAE.",
+      "shortDescription": "17 Meter articulating boom lift for higher reach applications",
+      "description": "The 17 Meter Boom Lift offers extended reach for demanding elevated work applications. Ideal for building maintenance, industrial installations, and construction projects requiring access to greater heights.",
       "specifications": {
-        "Operating Weight": "21,000 kg",
-        "Engine Power": "252 HP",
-        "Bucket Capacity": "3.8 m³",
-        "Dump Height": "3.0 m",
-        "Breakout Force": "18,200 kg",
-        "Fuel Tank": "350 L"
+        "Working Height": "17 m",
+        "Platform Capacity": "250 kg",
+        "Horizontal Reach": "9.5 m",
+        "Platform Size": "1.8 x 0.8 m",
+        "Power Source": "Diesel",
+        "Drive": "4WD"
+      },
+      "available": true,
+      "featured": false
+    },
+    {
+      "id": "high-up-truck-7-ton",
+      "name": "High Up Truck 7 Ton",
+      "slug": "high-up-truck-7-ton",
+      "category": "High Up Truck",
+      "variant": "7 Ton",
+      "thumbImage": "/highuptruck/highuptruck1.png",
+      "coverImage": "/highuptruck/highuptruck1.png",
+      "gallery": [
+        { "image": "/highuptruck/highuptruck1.png", "label": "7 Ton" },
+        { "image": "/highuptruck/highuptruck2.jpeg", "label": "10 Ton" },
+        { "image": "/highuptruck/highuptruck3.jpeg", "label": "Working 1" },
+        { "image": "/highuptruck/highuptruck4.jpeg", "label": "Working 2" },
+        { "image": "/highuptruck/highuptruck5.png", "label": "Detail 1" },
+        { "image": "/highuptruck/highuptruck6.png", "label": "Detail 2" },
+        { "image": "/highuptruck/highuptruck7.jpeg", "label": "Detail 3" },
+        { "image": "/highuptruck/highuptruck8.jpeg", "label": "Detail 4" }
+      ],
+      "shortDescription": "7 Ton truck-mounted crane for urban lifting and transport",
+      "description": "The 7 Ton High Up Truck combines transport and lifting capabilities in one efficient unit. Perfect for furniture moving, equipment delivery, and urban construction material handling where space is limited.",
+      "specifications": {
+        "Lifting Capacity": "7 Ton",
+        "Max Lift Height": "12 m",
+        "Boom Reach": "8 m",
+        "Bed Size": "6 x 2.4 m",
+        "Engine Power": "180 HP",
+        "GVW": "15 Ton"
       },
       "available": true,
       "featured": true
+    },
+    {
+      "id": "high-up-truck-10-ton",
+      "name": "High Up Truck 10 Ton",
+      "slug": "high-up-truck-10-ton",
+      "category": "High Up Truck",
+      "variant": "10 Ton",
+      "thumbImage": "/highuptruck/highuptruck2.jpeg",
+      "coverImage": "/highuptruck/highuptruck2.jpeg",
+      "gallery": [
+        { "image": "/highuptruck/highuptruck1.png", "label": "7 Ton" },
+        { "image": "/highuptruck/highuptruck2.jpeg", "label": "10 Ton" },
+        { "image": "/highuptruck/highuptruck3.jpeg", "label": "Working 1" },
+        { "image": "/highuptruck/highuptruck4.jpeg", "label": "Working 2" },
+        { "image": "/highuptruck/highuptruck5.png", "label": "Detail 1" },
+        { "image": "/highuptruck/highuptruck6.png", "label": "Detail 2" },
+        { "image": "/highuptruck/highuptruck7.jpeg", "label": "Detail 3" },
+        { "image": "/highuptruck/highuptruck8.jpeg", "label": "Detail 4" }
+      ],
+      "shortDescription": "10 Ton truck-mounted crane for heavier lifting operations",
+      "description": "The 10 Ton High Up Truck offers enhanced lifting capacity for heavier loads. Ideal for industrial equipment delivery, construction material handling, and commercial moving operations.",
+      "specifications": {
+        "Lifting Capacity": "10 Ton",
+        "Max Lift Height": "15 m",
+        "Boom Reach": "10 m",
+        "Bed Size": "7 x 2.5 m",
+        "Engine Power": "220 HP",
+        "GVW": "20 Ton"
+      },
+      "available": true,
+      "featured": false
+    },
+    {
+      "id": "recovery-5-ton",
+      "name": "Recovery 5 Ton",
+      "slug": "recovery-5-ton",
+      "category": "Recovery",
+      "variant": "5 Ton",
+      "thumbImage": "/recovery/recovery1.jpeg",
+      "coverImage": "/recovery/recovery1.jpeg",
+      "gallery": [
+        { "image": "/recovery/recovery1.jpeg", "label": "5 Ton" },
+        { "image": "/recovery/recovery2.jpeg", "label": "8 Ton" },
+        { "image": "/recovery/recovery3.jpeg", "label": "Working 1" },
+        { "image": "/recovery/recovery4.jpeg", "label": "Working 2" },
+        { "image": "/recovery/recovery5.jpeg", "label": "Detail 1" },
+        { "image": "/recovery/recovery6.jpeg", "label": "Detail 2" },
+        { "image": "/recovery/recovery7.jpeg", "label": "Detail 3" },
+        { "image": "/recovery/recovery8.jpeg", "label": "Detail 4" },
+        { "image": "/recovery/recovery9.jpeg", "label": "Detail 5" }
+      ],
+      "shortDescription": "5 Ton recovery vehicle for light vehicle towing and rescue",
+      "description": "Our 5 Ton Recovery Vehicle is perfect for light vehicle towing and roadside assistance. Features hydraulic winch and tilt bed for safe and efficient vehicle recovery operations.",
+      "specifications": {
+        "Towing Capacity": "5 Ton",
+        "Winch Capacity": "6 Ton",
+        "Bed Length": "5.5 m",
+        "Bed Type": "Tilt & Slide",
+        "Engine Power": "150 HP",
+        "GVW": "10 Ton"
+      },
+      "available": true,
+      "featured": false
+    },
+    {
+      "id": "recovery-8-ton",
+      "name": "Recovery 8 Ton",
+      "slug": "recovery-8-ton",
+      "category": "Recovery",
+      "variant": "8 Ton",
+      "thumbImage": "/recovery/recovery2.jpeg",
+      "coverImage": "/recovery/recovery2.jpeg",
+      "gallery": [
+        { "image": "/recovery/recovery1.jpeg", "label": "5 Ton" },
+        { "image": "/recovery/recovery2.jpeg", "label": "8 Ton" },
+        { "image": "/recovery/recovery3.jpeg", "label": "Working 1" },
+        { "image": "/recovery/recovery4.jpeg", "label": "Working 2" },
+        { "image": "/recovery/recovery5.jpeg", "label": "Detail 1" },
+        { "image": "/recovery/recovery6.jpeg", "label": "Detail 2" },
+        { "image": "/recovery/recovery7.jpeg", "label": "Detail 3" },
+        { "image": "/recovery/recovery8.jpeg", "label": "Detail 4" },
+        { "image": "/recovery/recovery9.jpeg", "label": "Detail 5" }
+      ],
+      "shortDescription": "8 Ton recovery vehicle for heavier vehicle and equipment recovery",
+      "description": "The 8 Ton Recovery Vehicle handles larger vehicles and light equipment recovery. Ideal for commercial vehicle towing, construction equipment transport, and heavy-duty roadside assistance.",
+      "specifications": {
+        "Towing Capacity": "8 Ton",
+        "Winch Capacity": "10 Ton",
+        "Bed Length": "6.5 m",
+        "Bed Type": "Tilt & Slide",
+        "Engine Power": "200 HP",
+        "GVW": "16 Ton"
+      },
+      "available": true,
+      "featured": false
     }
   ]
 }

@@ -80,6 +80,148 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Our Equipment Section */}
+      <section className="py-16 md:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-[var(--text-primary)] mb-4">
+              Our Equipment Fleet
+            </h2>
+            <p className="text-lg text-[var(--text-secondary)] max-w-2xl mx-auto">
+              We maintain a diverse fleet of well-serviced, modern machinery to meet all your construction needs.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6">
+            {/* Crane */}
+            <Link href="/catalog?category=Crane" className="group">
+              <div className="rounded-2xl p-4 border border-border hover:shadow-xl transition-all duration-300 hover:border-primary" style={{ backgroundColor: '#ffffff' }}>
+                <div className="relative h-28 md:h-32 flex items-center justify-center mb-3" style={{ backgroundColor: '#ffffff' }}>
+                  <Image
+                    src="/logo/crane2.jpg"
+                    alt="Crane"
+                    width={120}
+                    height={100}
+                    className="object-contain max-h-24 md:max-h-28 group-hover:scale-110 transition-transform duration-300"
+                    style={{ backgroundColor: '#ffffff' }}
+                  />
+                </div>
+                <h3 className="font-bold text-center text-[var(--text-primary)] group-hover:text-primary transition-colors">
+                  Cranes
+                </h3>
+              </div>
+            </Link>
+
+            {/* Forklift */}
+            <Link href="/catalog?category=Forklift" className="group">
+              <div className="rounded-2xl p-4 border border-border hover:shadow-xl transition-all duration-300 hover:border-primary" style={{ backgroundColor: '#ffffff' }}>
+                <div className="relative h-28 md:h-32 flex items-center justify-center mb-3" style={{ backgroundColor: '#ffffff' }}>
+                  <Image
+                    src="/logo/forklift8.png"
+                    alt="Forklift"
+                    width={120}
+                    height={100}
+                    className="object-contain max-h-24 md:max-h-28 group-hover:scale-110 transition-transform duration-300"
+                    style={{ backgroundColor: '#ffffff' }}
+                  />
+                </div>
+                <h3 className="font-bold text-center text-[var(--text-primary)] group-hover:text-primary transition-colors">
+                  Forklifts
+                </h3>
+              </div>
+            </Link>
+
+            {/* Backhoe Loader */}
+            <Link href="/catalog?category=Backhoe%20Loader" className="group">
+              <div className="rounded-2xl p-4 border border-border hover:shadow-xl transition-all duration-300 hover:border-primary" style={{ backgroundColor: '#ffffff' }}>
+                <div className="relative h-28 md:h-32 flex items-center justify-center mb-3" style={{ backgroundColor: '#ffffff' }}>
+                  <Image
+                    src="/logo/Backhoe-loaders2.jpg"
+                    alt="Backhoe Loader"
+                    width={120}
+                    height={100}
+                    className="object-contain max-h-24 md:max-h-28 group-hover:scale-110 transition-transform duration-300"
+                    style={{ backgroundColor: '#ffffff' }}
+                  />
+                </div>
+                <h3 className="font-bold text-center text-[var(--text-primary)] group-hover:text-primary transition-colors">
+                  Backhoe Loaders
+                </h3>
+              </div>
+            </Link>
+
+            {/* Boom Lift */}
+            <Link href="/catalog?category=Boom%20Lift" className="group">
+              <div className="rounded-2xl p-4 border border-border hover:shadow-xl transition-all duration-300 hover:border-primary" style={{ backgroundColor: '#ffffff' }}>
+                <div className="relative h-28 md:h-32 flex items-center justify-center mb-3" style={{ backgroundColor: '#ffffff' }}>
+                  <Image
+                    src="/logo/boomlift3.jpg"
+                    alt="Boom Lift"
+                    width={120}
+                    height={100}
+                    className="object-contain max-h-24 md:max-h-28 group-hover:scale-110 transition-transform duration-300"
+                    style={{ backgroundColor: '#ffffff' }}
+                  />
+                </div>
+                <h3 className="font-bold text-center text-[var(--text-primary)] group-hover:text-primary transition-colors">
+                  Boom Lifts
+                </h3>
+              </div>
+            </Link>
+
+            {/* High Up Truck */}
+            <Link href="/catalog?category=High%20Up%20Truck" className="group">
+              <div className="rounded-2xl p-4 border border-border hover:shadow-xl transition-all duration-300 hover:border-primary" style={{ backgroundColor: '#ffffff' }}>
+                <div className="relative h-28 md:h-32 flex items-center justify-center mb-3" style={{ backgroundColor: '#ffffff' }}>
+                  <Image
+                    src="/logo/highuptruck2.png"
+                    alt="High Up Truck"
+                    width={120}
+                    height={100}
+                    className="object-contain max-h-24 md:max-h-28 group-hover:scale-110 transition-transform duration-300"
+                    style={{ backgroundColor: '#ffffff' }}
+                  />
+                </div>
+                <h3 className="font-bold text-center text-[var(--text-primary)] group-hover:text-primary transition-colors">
+                  High Up Trucks
+                </h3>
+              </div>
+            </Link>
+
+            {/* Recovery */}
+            <Link href="/catalog?category=Recovery" className="group">
+              <div className="rounded-2xl p-4 border border-border hover:shadow-xl transition-all duration-300 hover:border-primary" style={{ backgroundColor: '#ffffff' }}>
+                <div className="relative h-28 md:h-32 flex items-center justify-center mb-3" style={{ backgroundColor: '#ffffff' }}>
+                  <Image
+                    src="/recovery/recovery1.jpeg"
+                    alt="Recovery"
+                    width={120}
+                    height={100}
+                    className="object-contain max-h-24 md:max-h-28 group-hover:scale-110 transition-transform duration-300"
+                    style={{ backgroundColor: '#ffffff' }}
+                  />
+                </div>
+                <h3 className="font-bold text-center text-[var(--text-primary)] group-hover:text-primary transition-colors">
+                  Recovery
+                </h3>
+              </div>
+            </Link>
+          </div>
+
+          <div className="text-center mt-10">
+            <Link
+              href="/catalog"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-lg font-medium hover:bg-primary-dark transition-colors"
+            >
+              View All Equipment
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Our Team */}
       <section className="py-16 md:py-24">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">

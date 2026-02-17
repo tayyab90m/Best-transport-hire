@@ -52,15 +52,22 @@ export default function MachinerySlider({ machinery }) {
             href={`/machinery/${machine.slug}`}
             className="group w-72 md:w-80 flex-shrink-0 bg-surface rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-border snap-start"
           >
-            <div className="relative h-48 bg-white flex items-center justify-center p-4 rounded-t-2xl">
+            <div className="relative h-48 flex items-center justify-center p-4 rounded-t-2xl" style={{ backgroundColor: '#ffffff' }}>
               <Image
                 src={machine.thumbImage}
                 alt={machine.name}
                 width={280}
                 height={180}
-                className="object-contain max-h-40 group-hover:scale-105 transition-transform duration-300 bg-white"
-                style={{ backgroundColor: 'white' }}
+                className="object-contain max-h-40 group-hover:scale-105 transition-transform duration-300"
+                style={{ backgroundColor: '#ffffff' }}
               />
+              {/* Variant Badge */}
+              {machine.variant && (
+                <span className="absolute top-3 left-3 px-3 py-1 bg-primary text-white text-xs font-bold rounded-full">
+                  {machine.variant}
+                </span>
+              )}
+              {/* Availability Badge */}
               {machine.available ? (
                 <span className="absolute top-3 right-3 px-3 py-1 bg-success text-white text-xs font-medium rounded-full">
                   Available
@@ -72,7 +79,9 @@ export default function MachinerySlider({ machinery }) {
               )}
             </div>
             <div className="p-5">
-              <p className="text-sm text-secondary font-medium mb-1">{machine.category}</p>
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-xs text-white bg-secondary px-2 py-0.5 rounded font-medium">{machine.category}</span>
+              </div>
               <h3 className="text-lg font-bold text-[var(--text-primary)] mb-2 group-hover:text-primary transition-colors">
                 {machine.name}
               </h3>
@@ -82,7 +91,7 @@ export default function MachinerySlider({ machinery }) {
               <div className="flex items-center justify-between">
                 <span className="text-primary font-semibold">Get Quote</span>
                 <span className="text-primary font-medium group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">
-                  View
+                  View Details
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -93,11 +102,12 @@ export default function MachinerySlider({ machinery }) {
         ))}
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="flex justify-center gap-2 mt-4 md:hidden">
-        {machinery.map((_, index) => (
-          <div key={index} className="w-2 h-2 rounded-full bg-border"></div>
-        ))}
+      {/* Scroll Indicator for Mobile */}
+      <div className="flex justify-center gap-1 mt-4 md:hidden">
+        <span className="text-xs text-[var(--text-muted)]">Swipe to see more</span>
+        <svg className="w-4 h-4 text-[var(--text-muted)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
       </div>
     </div>
   );

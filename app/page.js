@@ -1,7 +1,9 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { SITE_CONFIG, USP_ITEMS } from '@/lib/constants';
 import machineryData from '@/data/machinery.json';
 import reviewsData from '@/data/reviews.json';
+import HeroSlider from '@/components/home/HeroSlider';
 import MachinerySlider from '@/components/home/MachinerySlider';
 import ReviewSlider from '@/components/home/ReviewSlider';
 
@@ -9,62 +11,13 @@ export default function Home() {
   const featuredMachinery = machineryData.machinery.filter(m => m.featured);
   const approvedReviews = reviewsData.reviews.filter(r => r.approved);
 
+  // Get unique categories for display
+  const categories = machineryData.categories;
+
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-[var(--primary-dark)] via-[var(--primary)] to-[var(--primary-light)] overflow-hidden">
-        {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          }} />
-        </div>
-        
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-            Great Equipment<br />
-            <span className="text-secondary">Greater Engineering</span>
-          </h1>
-          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
-            Premium construction equipment rental services in UAE. Quality machinery for your projects.
-          </p>
-          
-          {/* Stats */}
-          <div className="flex flex-wrap justify-center gap-8 md:gap-16 mb-12">
-            <div className="text-center">
-              <span className="text-5xl md:text-6xl font-bold text-secondary">{SITE_CONFIG.stats.projects}</span>
-              <p className="text-white/80 mt-2">{SITE_CONFIG.stats.projectsLabel}</p>
-            </div>
-            <div className="text-center">
-              <span className="text-5xl md:text-6xl font-bold text-secondary">{SITE_CONFIG.stats.experience}+</span>
-              <p className="text-white/80 mt-2">{SITE_CONFIG.stats.experienceLabel}</p>
-            </div>
-          </div>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Link
-              href="/catalog"
-              className="px-8 py-4 bg-secondary text-[var(--primary-dark)] rounded-xl font-bold text-lg hover:bg-yellow-400 transition-colors shadow-lg"
-            >
-              View Equipment
-            </Link>
-            <Link
-              href="/contact"
-              className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white border-2 border-white/30 rounded-xl font-bold text-lg hover:bg-white/20 transition-colors"
-            >
-              Contact Us
-            </Link>
-          </div>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <svg className="w-6 h-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
-        </div>
-      </section>
+      {/* Hero Section with Image Slider */}
+      <HeroSlider />
 
       {/* Featured Machinery Section with Slider */}
       <section className="py-16 md:py-24 bg-background">
@@ -95,8 +48,51 @@ export default function Home() {
         </div>
       </section>
 
-      {/* USP Section */}
+      {/* Categories Grid Section */}
       <section className="py-16 md:py-24 bg-surface">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-[var(--text-primary)] mb-4">
+              Equipment Categories
+            </h2>
+            <p className="text-lg text-[var(--text-secondary)]">
+              Browse our wide range of construction and industrial equipment
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6">
+            {categories.map((category, index) => {
+              const categoryMachine = machineryData.machinery.find(m => m.category === category);
+              return (
+                <Link
+                  key={category}
+                  href={`/catalog?category=${encodeURIComponent(category)}`}
+                  className="group bg-background rounded-2xl p-4 text-center hover:shadow-xl transition-all duration-300 border border-border hover:border-primary"
+                >
+                  <div className="relative h-24 md:h-32 mb-3 rounded-xl overflow-hidden flex items-center justify-center" style={{ backgroundColor: '#ffffff' }}>
+                    {categoryMachine && (
+                      <Image
+                        src={categoryMachine.thumbImage}
+                        alt={category}
+                        width={120}
+                        height={100}
+                        className="object-contain max-h-24 md:max-h-28 group-hover:scale-110 transition-transform duration-300"
+                        style={{ backgroundColor: '#ffffff' }}
+                      />
+                    )}
+                  </div>
+                  <h3 className="font-bold text-[var(--text-primary)] text-sm md:text-base group-hover:text-primary transition-colors">
+                    {category}
+                  </h3>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* USP Section */}
+      <section className="py-16 md:py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--text-primary)] mb-4">
@@ -111,7 +107,7 @@ export default function Home() {
             {USP_ITEMS.map((usp, index) => (
               <div
                 key={index}
-                className="bg-background rounded-2xl p-6 text-center hover:shadow-lg transition-shadow border border-border"
+                className="bg-surface rounded-2xl p-6 text-center hover:shadow-lg transition-shadow border border-border"
               >
                 <div className="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
                   {usp.icon === 'equipment' && (
@@ -144,7 +140,7 @@ export default function Home() {
       </section>
 
       {/* Reviews Section with Slider */}
-      <section className="py-16 md:py-24 bg-background">
+      <section className="py-16 md:py-24 bg-surface">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--text-primary)] mb-4">
@@ -186,11 +182,9 @@ export default function Home() {
               href={`https://wa.me/${SITE_CONFIG.contact.whatsapp.replace(/[^0-9]/g, '')}?text=${encodeURIComponent("Hi There, I need a quote for equipment rental.")}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 bg-[#25D366] text-white rounded-xl font-bold text-lg hover:bg-[#20bd5a] transition-colors inline-flex items-center gap-2"
+              className="px-8 py-4 bg-[#25D366] text-white rounded-xl font-bold text-lg hover:bg-[#20bd5a] transition-colors inline-flex items-center gap-3"
             >
-              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-              </svg>
+              <Image src="/social_logo/whatsapp.png" alt="WhatsApp" width={28} height={28} />
               Get Quote on WhatsApp
             </a>
             <a
